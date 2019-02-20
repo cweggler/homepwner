@@ -14,6 +14,7 @@
 		46175BE0221D8E1C000DF194 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46175BDE221D8E1C000DF194 /* LaunchScreen.storyboard */; };
 		46175BEB221D8E1C000DF194 /* HomepwnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46175BEA221D8E1C000DF194 /* HomepwnerTests.swift */; };
 		46175BF6221D8E1C000DF194 /* HomepwnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46175BF5221D8E1C000DF194 /* HomepwnerUITests.swift */; };
+		46175C04221D9127000DF194 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46175C03221D9127000DF194 /* ItemsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		46175BF1221D8E1C000DF194 /* HomepwnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomepwnerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46175BF5221D8E1C000DF194 /* HomepwnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepwnerUITests.swift; sourceTree = "<group>"; };
 		46175BF7221D8E1C000DF194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46175C03221D9127000DF194 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				46175BD5221D8E19000DF194 /* AppDelegate.swift */,
+				46175C03221D9127000DF194 /* ItemsViewController.swift */,
 				46175BD7221D8E19000DF194 /* ViewController.swift */,
 				46175BD9221D8E19000DF194 /* Main.storyboard */,
 				46175BDC221D8E1C000DF194 /* Assets.xcassets */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46175BD8221D8E19000DF194 /* ViewController.swift in Sources */,
+				46175C04221D9127000DF194 /* ItemsViewController.swift in Sources */,
 				46175BD6221D8E19000DF194 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
