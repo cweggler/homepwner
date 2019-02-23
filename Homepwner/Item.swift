@@ -22,4 +22,26 @@ class Item: NSObject {
         
         super .init()
     }
+    
+    convenience init(random: Bool = false) {
+        if random {
+        let adjectives = ["Fluffy", "Rusty", "Shiny"]
+        let nouns = ["Bear", "Spork", "Mac"]
+        
+        var idx = Int.random(in: 0..<adjectives.count)
+        let randomAdjective = adjectives[Int(idx)]
+        
+        idx = Int.random(in: 0..<nouns.count)
+        let randomNoun = nouns[Int(idx)]
+        
+        let randomName = "\(randomAdjective) \(randomNoun)"
+        let randomValue = Int.random(in: 0..<100)
+        let randomSerialNumber = UUID().uuidString.components(separatedBy: "-").first!
+        
+        self.init(name: randomName, serialNumber: randomSerialNumber, valueInDollars: randomValue)
+        } else {
+            self.init(name: "", serialNumber: nil, valueInDollars: 0)
+        }
+    }
+    
 }
