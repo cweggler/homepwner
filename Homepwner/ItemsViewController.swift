@@ -11,6 +11,14 @@ import UIKit
 class ItemsViewController: UITableViewController {
     var itemStore: ItemStore!
     
+    @IBAction func addNewItem(_ sender: UIButton){
+        
+    }
+    
+    @IBAction func toggleEditingMode(_ sender: UIButton){
+        
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemStore.allItems.count
     }
