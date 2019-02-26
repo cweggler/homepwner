@@ -16,6 +16,7 @@
 		46175C04221D9127000DF194 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46175C03221D9127000DF194 /* ItemsViewController.swift */; };
 		46175C06221D95CD000DF194 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46175C05221D95CD000DF194 /* Item.swift */; };
 		4617877A2220FBC00002D4C9 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461787792220FBC00002D4C9 /* ItemStore.swift */; };
+		46234F2522242234000A3BDF /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46234F2422242234000A3BDF /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		46175C03221D9127000DF194 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		46175C05221D95CD000DF194 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		461787792220FBC00002D4C9 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		46234F2422242234000A3BDF /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				461787792220FBC00002D4C9 /* ItemStore.swift */,
 				46175BD5221D8E19000DF194 /* AppDelegate.swift */,
 				46175C03221D9127000DF194 /* ItemsViewController.swift */,
+				46234F2422242234000A3BDF /* ItemCell.swift */,
 				46175BD9221D8E19000DF194 /* Main.storyboard */,
 				46175BDC221D8E1C000DF194 /* Assets.xcassets */,
 				46175BDE221D8E1C000DF194 /* LaunchScreen.storyboard */,
@@ -266,6 +269,7 @@
 				46175C06221D95CD000DF194 /* Item.swift in Sources */,
 				4617877A2220FBC00002D4C9 /* ItemStore.swift in Sources */,
 				46175BD6221D8E19000DF194 /* AppDelegate.swift in Sources */,
+				46234F2522242234000A3BDF /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
