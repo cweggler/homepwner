@@ -93,7 +93,7 @@
                                     <outlet property="nameLabel" destination="eac-BA-rnW" id="PWT-TW-bwY"/>
                                     <outlet property="serialNumberLabel" destination="EVj-9a-RCp" id="MKO-dQ-3CM"/>
                                     <outlet property="valueLabel" destination="7UF-PG-zdU" id="X4x-IA-ptj"/>
-                                    <segue destination="8CO-zr-wj9" kind="show" id="c0D-25-caj"/>
+                                    <segue destination="8CO-zr-wj9" kind="show" identifier="showItem" id="c0D-25-caj"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -192,7 +192,6 @@
                         <viewLayoutGuide key="safeArea" id="swm-Um-Ek7"/>
                     </view>
                     <connections>
-                        <outlet property="dateCreatedLabel" destination="qFD-Jo-5PP" id="XbE-5x-6jZ"/>
                         <outlet property="dateLabel" destination="qFD-Jo-5PP" id="nJ8-z4-Bw2"/>
                         <outlet property="nameField" destination="NhH-57-FJG" id="Qic-Ug-Lss"/>
                         <outlet property="serialNumberField" destination="5hd-F8-zhh" id="odp-Y1-lev"/>
