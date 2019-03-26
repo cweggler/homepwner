@@ -15,6 +15,12 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var dateLabel: UILabel!
     var item: Item!
     
+    // allows the user to dismiss the keyboard by touching in the background
+    @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
+    
     // creates a NumberFormatter to use for the Item's value
     let numberFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
