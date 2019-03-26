@@ -32,9 +32,6 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5V-Uy-AmW">
                                     <rect key="frame" x="191.5" y="15" width="175.5" height="30"/>
                                     <state key="normal" title="Add"/>
-                                    <connections>
-                                        <action selector="addNewItem:" destination="dkq-DJ-HEX" eventType="touchUpInside" id="0be-2H-qhZ"/>
-                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -102,7 +99,13 @@
                             <outlet property="delegate" destination="dkq-DJ-HEX" id="iXw-q2-mOz"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Homepwner" id="h83-40-yGo"/>
+                    <navigationItem key="navigationItem" title="Homepwner" id="h83-40-yGo">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Q4y-O7-wb2">
+                            <connections>
+                                <action selector="addNewItem:" destination="dkq-DJ-HEX" id="pPn-DK-boO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7RA-Pu-9Mq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -193,6 +196,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="swm-Um-Ek7" firstAttribute="trailing" secondItem="qGW-Ml-wPU" secondAttribute="trailing" id="9V6-Jn-cB8"/>
                             <constraint firstItem="qGW-Ml-wPU" firstAttribute="leading" secondItem="swm-Um-Ek7" secondAttribute="leading" id="bnA-J7-a28"/>
@@ -200,6 +204,9 @@
                             <constraint firstItem="qGW-Ml-wPU" firstAttribute="top" secondItem="swm-Um-Ek7" secondAttribute="top" constant="8" id="nmK-bo-EQv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="swm-Um-Ek7"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="aj5-5t-pOQ" appends="YES" id="CCy-bJ-48p"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="qFD-Jo-5PP" id="nJ8-z4-Bw2"/>
