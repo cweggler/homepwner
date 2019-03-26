@@ -26,6 +26,12 @@ class ItemsViewController: UITableViewController {
         
     }
     
+    // This adds the Edit button to the navigation bar programmatically
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        navigationItem.leftBarButtonItem = editButtonItem
+    }
+    
     @IBAction func toggleEditingMode(_ sender: UIButton){
         // If you are currently in editing mode...
         if isEditing {
