@@ -115,6 +115,12 @@ class ItemsViewController: UITableViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        tableView.reloadData()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // if the triggered segue is the "showItem" segue
         switch segue.identifier {
