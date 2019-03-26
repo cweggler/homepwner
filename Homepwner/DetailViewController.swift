@@ -55,6 +55,9 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
+        //dismiss the keyboard in a nicer way
+        view.endEditing(true)
+        
         // "Save" changes to Item
         item.name = nameField.text ?? "" // this unwraps an optional but provides an alternative to nil
         item.serialNumber = serialNumberField.text
